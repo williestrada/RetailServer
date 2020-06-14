@@ -57,6 +57,7 @@ router.delete("/:countId", async (req, res) => {
 //add new Count
 router.post("/", async (req, res) => {
   const addCount = new Count({
+    Date____: req.body.Date____,
     RecordId: req.body.RecordId,
     OtherCde: req.body.OtherCde,
     Descript: req.body.Descript,
@@ -64,6 +65,7 @@ router.post("/", async (req, res) => {
     ItemCode: req.body.ItemCode,
     Location: req.body.Location,
     ItemPrce: req.body.ItemPrce,
+    UserName: req.body.UserName,
     DeviceId: req.body.DeviceId,
   });
 

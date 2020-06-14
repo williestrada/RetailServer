@@ -8,6 +8,7 @@ const SalesSchema = mongoose.Schema({
   ItemCode: { type: String, required: true },
   Location: { type: String, required: true },
   ItemPrce: { type: Number, required: true },
+  UserName: { type: String },
   DeviceId: { type: String, required: true },
 });
 

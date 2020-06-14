@@ -5,9 +5,10 @@ const CountSchema = mongoose.Schema({
   OtherCde: { type: String, required: true },
   Descript: { type: String, required: true },
   Quantity: { type: Number, required: true },
-  ItemCode: { type: String, required: true },
+  ItemCode: { type: String },
   Location: { type: String, required: true },
-  ItemPrce: { type: Number, required: true },
+  ItemPrce: { type: Number },
+  UserName: { type: String },
   DeviceId: { type: String, required: true },
 });
 
