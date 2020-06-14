@@ -5,7 +5,7 @@ const SalesSchema = mongoose.Schema({
   OtherCde: { type: String, required: true },
   Descript: { type: String, required: true },
   Quantity: { type: Number, required: true },
-  ItemCode: { type: String, required: true },
+  ItemCode: { type: String },
   Location: { type: String, required: true },
   ItemPrce: { type: Number, required: true },
   UserName: { type: String },

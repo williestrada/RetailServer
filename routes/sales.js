@@ -57,6 +57,7 @@ router.delete("/:salesId", async (req, res) => {
 //add new sales
 router.post("/", async (req, res) => {
   const addSales = new Sales({
+    Date____: req.body.Date____,
     RecordId: req.body.RecordId,
     OtherCde: req.body.OtherCde,
     Descript: req.body.Descript,
@@ -65,6 +66,7 @@ router.post("/", async (req, res) => {
     Location: req.body.Location,
     ItemPrce: req.body.ItemPrce,
     DeviceId: req.body.DeviceId,
+    UserName: req.body.UserName,
   });
 
   try {
